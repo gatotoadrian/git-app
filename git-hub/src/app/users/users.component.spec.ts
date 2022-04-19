@@ -12,8 +12,7 @@ describe('UsersComponent', () => {
     })
     .compileComponents();
   });
-
-  beforeEach(() => {
+    beforeEach(() => {
     fixture = TestBed.createComponent(UsersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
