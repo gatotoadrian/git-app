@@ -1,0 +1,23 @@
+<div class="main">
+  <div class="logo">
+    <p id="heading" class="gradient-text" >Repository Search</p> <br>
+    <p id="sub-heading" class="gradient-text"></p>
+  </div>
+  <p id="sub-heading" class="gradient-text">Enter Github Repository</p>
+  <form>
+    <div class="mb-3">
+      <input type="email" class="form-control" placeholder="Search by Repository" [(ngModel)] = "repoName" name="repoName" (keyup)='searchRepo()' autocomplete="off">
+    </div>
+    <div class="list"></div>
+    <ul>
+      <li *ngFor= 'let rep of repo'>
+        <a target="_blank" href="{{rep.html_url}}">
+          <div class="list">
+            <h3>{{rep.name}}</h3> <br>
+            {{rep.description}}
+          </div>
+        </a>
+      </li>
+    </ul>
+  </form>
+</div>
