@@ -42,7 +42,6 @@ export class SearchService {
         // this.user.repos = "response.public_repos"
 
         resolve(response)
-        // response ()
       },
         error => {
           this.user.photo = "Avatar not found"
