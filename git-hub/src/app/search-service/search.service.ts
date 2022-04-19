@@ -21,8 +21,7 @@ export class SearchService {
 
   userRequest(userName:string) {
     this.userName=userName
-    console.log(this.userName);
-    
+    console.log(this.userName);    
     interface ApiResponse {
       name: string;
       avatar_url: string;
