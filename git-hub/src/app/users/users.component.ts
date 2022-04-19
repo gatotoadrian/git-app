@@ -20,7 +20,6 @@ export class UsersComponent implements OnInit {
     this.searchService.userRequest(this.result)
     this.user = this.searchService.user
   }
-
   searchUserRepo() {
     
     this.searchService.userRepoRequest(this.result).subscribe((userRepos)=>{
